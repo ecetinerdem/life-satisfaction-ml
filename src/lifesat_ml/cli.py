@@ -1,16 +1,16 @@
 import argparse
 import sys
 
-from src.config import CONFIG
-from src.data import load_data, preprocess_data, prepare_features
-from src.model import (
+from lifesat_ml.config import CONFIG
+from lifesat_ml.data import load_data, preprocess_data, prepare_features
+from lifesat_ml.model import (
     get_model,
     save_model,
     load_model,
     save_results_to_json,
     load_results_from_json
 )
-from src.visualization import plot_lifesat_distribution
+from lifesat_ml.visualization import plot_lifesat_distribution
 
 from sklearn.metrics import mean_absolute_error
 

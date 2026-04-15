@@ -1,5 +1,5 @@
 import pandas as pd
-from src.config import CONFIG
+from lifesat_ml.config import CONFIG
 
 def load_data(path):
     return pd.read_csv(path)

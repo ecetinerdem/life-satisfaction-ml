@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lifesat-ml"
+version = "0.1.0"
+description = "Life Satisfaction Prediction with ML + SHAP"
+authors = [{ name = "Cetin ERDEM" }]
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "xgboost",
+    "shap"
+]
+
+[project.scripts]
+lifesat-cli = "lifesat_ml.cli:main"
