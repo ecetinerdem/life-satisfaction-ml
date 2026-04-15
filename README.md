@@ -1,10 +1,10 @@
-# 🧠 What Drives Life Satisfaction?
+# What Drives Life Satisfaction?
 
 ### A Machine Learning & Explainable AI Study
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project explores the key factors that influence **life satisfaction** using a large-scale social survey dataset.(TGSS2024 https://www.tgss.org.tr/iletisim?type=dataset)
 
@@ -12,7 +12,7 @@ By combining **machine learning models** with **explainable AI (SHAP)**, the goa
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 * Predict individual **life satisfaction (`lifesat`)**
 * Identify the most important **social, economic, and psychological factors**
@@ -20,7 +20,7 @@ By combining **machine learning models** with **explainable AI (SHAP)**, the goa
 
 ---
 
-## 🧾 Dataset
+## Dataset
 
 The dataset contains hundreds of variables related to:
 
@@ -38,7 +38,7 @@ The dataset contains hundreds of variables related to:
 
 ---
 
-## 🧹 Data Preprocessing
+## Data Preprocessing
 
 Key steps:
 
@@ -49,7 +49,7 @@ Key steps:
 
 ---
 
-## 🔧 Feature Engineering
+## Feature Engineering
 
 Raw survey data was transformed into meaningful indices:
 
@@ -64,39 +64,39 @@ This reduced 500+ variables into a compact, interpretable feature set.
 
 ---
 
-## 📊 Exploratory Data Analysis
+## Exploratory Data Analysis
 
-### 📈 Feature Importance
+### Feature Importance
 ![Feature Importance](results/feature_importance_rf.png)
 
-### 📊 Life Satisfaction Distribution
+### Life Satisfaction Distribution
 ![Life Satisfaction Distribution](results/lifesat_distribution.png)
 
-### 👥 Life Satisfaction by Gender
+### Life Satisfaction by Gender
 ![Life Satisfaction vs Gender](results/lifesat_vs_gender.png)
 
-### 💰 Life Satisfaction vs Income
+### Life Satisfaction vs Income
 ![Life Satisfaction vs Income](results/lifesat_vs_income.png)
 
-### 🤝 Life Satisfaction vs Social Trust
+### Life Satisfaction vs Social Trust
 ![Life Satisfaction vs Social Trust](results/lifesat_vs_trust.png)
 
-### 😰 Life Satisfaction vs Work Stress
+### Life Satisfaction vs Work Stress
 ![Life Satisfaction vs Work Stress](results/lifesat_vs_workstress.png)
 
-### 🎂 Life Satisfaction by Age
+### Life Satisfaction by Age
 ![Life Satisfaction by Age](results/life_sat_by_age.png)
 
-### 🧠 SHAP Summary
+### SHAP Summary
 ![SHAP Summary](results/shap_summary.png)
 
-### 📊 SHAP Feature Importance
+### SHAP Feature Importance
 ![SHAP Feature Importance](results/shap_bar.png)
 
-### 🔍 SHAP Individual Explanation
+### SHAP Individual Explanation
 ![SHAP Waterfall](results/shap_bar_waterfall.png)
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 Three models were trained and evaluated:
 
@@ -104,7 +104,7 @@ Three models were trained and evaluated:
 * Random Forest Regressor
 * XGBoost Regressor
 
-### 📊 Model Performance (MAE)
+### Model Performance (MAE)
 
 | Model             | MAE          |
 | ----------------- | ------------ |
@@ -116,7 +116,7 @@ Three models were trained and evaluated:
 
 ---
 
-## 📈 Feature Importance
+## Feature Importance
 
 ### Random Forest Feature Importance
 
@@ -124,21 +124,21 @@ Three models were trained and evaluated:
 
 ---
 
-## 🧠 Explainability with SHAP
+## Explainability with SHAP
 
 To understand model predictions, SHAP (SHapley Additive exPlanations) was used.
 
-### 🔥 SHAP Summary Plot
+### SHAP Summary Plot
 ![SHAP Summary](results/shap_summary.png)
 
 ---
 
-### 📊 SHAP Feature Importance
+### SHAP Feature Importance
 ![SHAP Feture Plot](results/shap_summary.png)
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 * **Social trust** is one of the strongest predictors of life satisfaction
 * **Work stress** has a significant negative impact
@@ -149,7 +149,7 @@ To understand model predictions, SHAP (SHapley Additive exPlanations) was used.
 
 ---
 
-## 🧠 Conclusion
+## Conclusion
 
 This project demonstrates that:
 
@@ -159,7 +159,7 @@ By combining machine learning with explainability, we can uncover meaningful ins
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * Python
 * pandas, numpy
@@ -186,7 +186,7 @@ life-satisfaction-ml/
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 * Hyperparameter tuning
 * Cross-validation
@@ -195,7 +195,7 @@ life-satisfaction-ml/
 
 ---
 
-## 👤 Author
+## Author
 
 Cetin ERDEM
 
