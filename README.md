@@ -120,7 +120,7 @@ Three models were trained and evaluated:
 
 ### Random Forest Feature Importance
 
-{add feature_importance_rf.png here}
+![Feature Importance](results/feature_importance_rf.png)
 
 ---
 
@@ -135,7 +135,6 @@ To understand model predictions, SHAP (SHapley Additive exPlanations) was used.
 
 ### 📊 SHAP Feature Importance
 ![SHAP Feture Plot](results/shap_summary.png)
-{add shap_bar.png here}
 
 ---
 
