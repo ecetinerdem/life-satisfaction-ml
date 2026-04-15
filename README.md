@@ -6,7 +6,7 @@
 
 ## 📌 Project Overview
 
-This project explores the key factors that influence **life satisfaction** using a large-scale social survey dataset.
+This project explores the key factors that influence **life satisfaction** using a large-scale social survey dataset.(TGSS2024 https://www.tgss.org.tr/iletisim?type=dataset)
 
 By combining **machine learning models** with **explainable AI (SHAP)**, the goal is not only to predict life satisfaction but also to understand *why* people feel more or less satisfied with their lives.
 
