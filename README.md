@@ -10,6 +10,16 @@ This project explores the key factors that influence **life satisfaction** using
 
 By combining **machine learning models** with **explainable AI (SHAP)**, the goal is not only to predict life satisfaction but also to understand *why* people feel more or less satisfied with their lives.
 
+This project includes a command-line interface (CLI) that allows you to run the full machine learning pipeline without modifying code.
+
+You can:
+
+* Train different models
+* Save and load trained models
+* Export results as JSON
+* Control plot generation
+* Reproduce experiments easily
+
 ---
 
 ## Objectives
@@ -61,6 +71,85 @@ Raw survey data was transformed into meaningful indices:
 * **Economic Satisfaction** → income and job satisfaction
 
 This reduced 500+ variables into a compact, interpretable feature set.
+
+---
+
+## How To Run
+
+All commands should be executed from the project root:
+
+```sh
+python -m src.cli
+```
+## Available Models
+You can choose between:
+
+* linear → Linear Regression
+* rf → Random Forest (default)
+* xgb → XGBoost
+## CLI Usage Examples
+🔹 Train a model
+```sh
+python -m src.cli --model-type rf
+```
+🔹 Train and save model
+```sh
+python -m src.cli --model-type rf --save-model
+```
+🔹 Save results as JSON
+```sh
+python -m src.cli --save-json
+```
+🔹 Save both model and results
+```sh
+python -m src.cli --model-type xgb --save-model --save-json
+```
+🔹 Load a trained model
+```sh
+python -m src.cli --load-model --model-path models/model.pkl
+```
+🔹 Load results from JSON
+```sh
+python -m src.cli --load-json
+```
+🔹 Disable plots
+```sh
+python -m src.cli --no-plot
+```
+🔹 Custom output paths
+```sh
+python -m src.cli \
+  --model-type xgb \
+  --save-model \
+  --save-json \
+  --model-path models/xgb_model.pkl \
+  --json-path models/xgb_results.json \
+  --output-dir results/
+```
+## How It Works
+* Loads dataset from data/
+* Cleans and preprocesses data
+* Trains or loads a model
+* Evaluates performance (MAE)
+## Saves:
+* Model (.pkl)
+* Results (.json)
+* Plots (.png)
+* Output Files
+* Models
+* models/model.pkl
+* Results (JSON)
+* models/results.json
+
+## Example:
+```json
+{
+    "model_type": "rf",
+    "mae": 0.85
+}
+```
+* Plots
+results/lifesat_distribution.png
 
 ---
 
