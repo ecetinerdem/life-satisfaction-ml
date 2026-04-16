@@ -1,5 +1,6 @@
 import argparse
 import sys
+import os
 
 from lifesat_ml.config import CONFIG
 from lifesat_ml.data import load_data, preprocess_data, prepare_features
@@ -63,6 +64,9 @@ def parse_arguments():
 
 def main():
     args = parse_arguments()
+
+    if not os.path.exists(args.file):
+    raise FileNotFoundError("Please provide dataset path using --file")
 
     # 👉 Load from JSON only
     if args.load_json:
