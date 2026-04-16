@@ -1,3 +1,7 @@
+[![PyPI version](https://img.shields.io/pypi/v/lifesat-ml.svg)](https://pypi.org/project/lifesat-ml/)
+[![Python Version](https://img.shields.io/pypi/pyversions/lifesat-ml.svg)](https://pypi.org/project/lifesat-ml/)
+[![License](https://img.shields.io/pypi/l/lifesat-ml.svg)](LICENSE)
+
 # What Drives Life Satisfaction?
 
 ### A Machine Learning & Explainable AI Study
