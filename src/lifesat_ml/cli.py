@@ -19,22 +19,45 @@ from sklearn.metrics import mean_absolute_error
 
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description="Life Satisfaction ML CLI")
+    parser = argparse.ArgumentParser(
+        description="Life Satisfaction ML CLI",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
 
-    parser.add_argument("--file", type=str, default=CONFIG["default_csv"])
-    parser.add_argument("--model-type", choices=CONFIG["available_models"], default="rf")
+    parser.add_argument("--file", type=str, default=CONFIG["default_csv"],
+                        help="Path to input dataset")
 
-    parser.add_argument("--load-model", action="store_true")
-    parser.add_argument("--save-model", action="store_true")
+    parser.add_argument("--model-type",
+                        choices=CONFIG["available_models"],
+                        default="rf",
+                        help="Model to use")
 
-    parser.add_argument("--model-path", default=CONFIG["default_model_path"])
+    parser.add_argument("--load-model", action="store_true",
+                        help="Load existing model instead of training")
 
-    parser.add_argument("--save-json", action="store_true")
-    parser.add_argument("--load-json", action="store_true")
-    parser.add_argument("--json-path", default=CONFIG["default_json_path"])
+    parser.add_argument("--save-model", action="store_true",
+                        help="Save trained model")
 
-    parser.add_argument("--output-dir", default=CONFIG["default_output_dir"])
-    parser.add_argument("--no-plot", action="store_true")
+    parser.add_argument("--model-path",
+                        default=CONFIG["default_model_path"],
+                        help="Path to save/load model")
+
+    parser.add_argument("--save-json", action="store_true",
+                        help="Save results as JSON")
+
+    parser.add_argument("--load-json", action="store_true",
+                        help="Load results from JSON")
+
+    parser.add_argument("--json-path",
+                        default=CONFIG["default_json_path"],
+                        help="Path for JSON results")
+
+    parser.add_argument("--output-dir",
+                        default=CONFIG["default_output_dir"],
+                        help="Directory to save plots")
+
+    parser.add_argument("--no-plot", action="store_true",
+                        help="Disable plotting")
 
     return parser.parse_args()
 

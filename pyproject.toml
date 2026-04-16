@@ -1,12 +1,15 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "lifesat-ml"
 version = "0.1.0"
-description = "Life Satisfaction Prediction with ML + SHAP"
+description = "Life Satisfaction Prediction using Machine Learning and SHAP"
+readme = "README.md"
 authors = [{ name = "Cetin ERDEM" }]
+license = { text = "MIT" }
+
 dependencies = [
     "pandas",
     "numpy",
@@ -16,6 +19,9 @@ dependencies = [
     "xgboost",
     "shap"
 ]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/life-satisfaction-ml"
 
 [project.scripts]
 lifesat-cli = "lifesat_ml.cli:main"

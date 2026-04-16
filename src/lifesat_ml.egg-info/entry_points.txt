@@ -1,0 +1,2 @@
+[console_scripts]
+lifesat-cli = lifesat_ml.cli:main
