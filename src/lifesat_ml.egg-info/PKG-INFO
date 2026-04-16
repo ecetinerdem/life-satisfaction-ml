@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: lifesat-ml
-Version: 0.1.0
+Version: 0.1.1
 Summary: Life Satisfaction Prediction using Machine Learning and SHAP
 Author: Cetin ERDEM
 License: MIT
@@ -46,6 +46,28 @@ You can:
 * Identify the most important **social, economic, and psychological factors**
 * Provide **interpretable insights** using explainable AI techniques
 
+---
+
+
+## Installation
+You can install the package directly from PyPI:
+
+```sh
+pip install lifesat-ml==0.1.0
+```
+
+PyPI page:
+https://pypi.org/project/lifesat-ml/0.1.0/
+
+---
+
+## Verify Installation
+
+After installing, you can check the CLI:
+
+```sh
+lifesat-cli --help
+```
 ---
 
 ## Dataset
@@ -100,12 +122,15 @@ All commands should be executed from the project root:
 python -m src.cli
 ```
 ## Available Models
+
 You can choose between:
 
 * linear → Linear Regression
 * rf → Random Forest (default)
 * xgb → XGBoost
+
 ## CLI Usage Examples
+
 🔹 Train a model
 ```sh
 python -m src.cli --model-type rf

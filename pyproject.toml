@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lifesat-ml"
-version = "0.1.0"
+version = "0.1.1"
 description = "Life Satisfaction Prediction using Machine Learning and SHAP"
 readme = "README.md"
 authors = [{ name = "Cetin ERDEM" }]

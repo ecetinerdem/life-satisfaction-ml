@@ -30,6 +30,28 @@ You can:
 
 ---
 
+
+## Installation
+You can install the package directly from PyPI:
+
+```sh
+pip install lifesat-ml==0.1.0
+```
+
+PyPI page:
+https://pypi.org/project/lifesat-ml/0.1.1/
+
+---
+
+## Verify Installation
+
+After installing, you can check the CLI:
+
+```sh
+lifesat-cli --help
+```
+---
+
 ## Dataset
 
 The dataset contains hundreds of variables related to:
@@ -82,12 +104,15 @@ All commands should be executed from the project root:
 python -m src.cli
 ```
 ## Available Models
+
 You can choose between:
 
 * linear → Linear Regression
 * rf → Random Forest (default)
 * xgb → XGBoost
+
 ## CLI Usage Examples
+
 🔹 Train a model
 ```sh
 python -m src.cli --model-type rf
